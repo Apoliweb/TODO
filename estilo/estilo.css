@@ -1,0 +1,97 @@
+body {
+  body {
+    background: #f8f8f8;
+  }
+}
+.contenedor {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+}
+.input {
+  width: 77%;
+  height: 2rem;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: .3rem;
+}
+.boton{
+    background: #334155;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    color: #f8f8f8;
+    border: none;
+    transition: 1s ease;
+}
+.boton:hover{
+    background: #0f172a;
+    cursor: pointer;
+}
+.input:focus{
+  outline: none;
+}
+
+.cajas {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+}
+.contenedorBotones {
+  margin-left: 2rem;
+}
+.eliminar {
+  background: #9b1426;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: #f8f8f8;
+  margin: 1rem;
+}
+.editar {
+  background: #035c7b;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: #f8f8f8;
+}
+
+.eliminar,
+.editar {
+  border: none;
+}
+.eliminar:hover,
+.editar:hover {
+  cursor: pointer;
+}
+.icon-tabler-pencil:hover {
+  color: red;
+}
+@media(width<480px){
+  .contenedor {
+    width: 100%;
+  }
+  .input{
+    width: 72%;
+  }
+  .cajas{
+    width: 88%;
+  }
+}
+/*
+.mostrarTarea{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+    */
