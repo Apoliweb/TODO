@@ -1,97 +1,105 @@
-body {
-  body {
-    background: #f8f8f8;
-  }
-}
-.contenedor {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1280px;
-}
-.input {
-  width: 77%;
-  height: 2rem;
-  background-color: #f8f8f8;
-  border: none;
-  border-radius: .3rem;
-}
-.boton{
-    background: #334155;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    color: #f8f8f8;
-    border: none;
-    transition: 1s ease;
-}
-.boton:hover{
-    background: #0f172a;
-    cursor: pointer;
-}
-.input:focus{
-  outline: none;
-}
-
-.cajas {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 0.3rem;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
-  width: 80%;
+body{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.8rem;
+  justify-content: center;
+  align-content: center;
+  background: #112540;
 }
-.contenedorBotones {
-  margin-left: 2rem;
-}
-.eliminar {
-  background: #9b1426;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  color: #f8f8f8;
-  margin: 1rem;
-}
-.editar {
-  background: #035c7b;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  color: #f8f8f8;
-}
-
-.eliminar,
-.editar {
-  border: none;
-}
-.eliminar:hover,
-.editar:hover {
-  cursor: pointer;
-}
-.icon-tabler-pencil:hover {
-  color: red;
-}
-@media(width<480px){
-  .contenedor {
-    width: 100%;
-  }
-  .input{
-    width: 72%;
-  }
-  .cajas{
-    width: 88%;
-  }
-}
-/*
-.mostrarTarea{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
+.contenedor{
+  width: 50%;
 }
 .caja{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
 }
-    */
+button{
+  padding: 0.5rem 1rem;
+}
+.boton{
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+}
+.input-text{
+  border:none;
+  outline: none;
+  padding: 1rem .5rem;
+  border-radius: .3rem;
+  width: 82%;
+}
+.input-boton{
+  padding: 1rem .5rem;
+  border: transparent;
+  border-radius: .3rem;
+  background: #308AD9;
+  outline: none;
+  color: #fff;
+}
+
+.input-boton:hover{
+  cursor: pointer;
+}
+.caja{
+  background: #fff;
+  /* width: 100%; */
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+}
+.formulario{
+  margin-bottom: 1rem;
+}
+p{
+  padding-right: 4rem;
+  font-size: 1.5rem;
+}
+.contenedor-botones .boton{
+  border-radius: .3rem;
+  background: #dc2626;
+  color: #fff;
+}
+.boton:hover{
+  cursor: pointer;
+}
+.contenedor-botones .botonEditar{
+  color: #fff;
+  border-radius: .3rem;
+  background: transparent;
+  border: none;
+  background: #64748b;
+}
+.botonEditar:hover{
+  cursor: pointer;
+}
+@media(width:768px){
+  .contenedor{
+    width: 80%;
+  }
+
+
+}
+
+@media(width<480px){
+  .contenedor{
+    width: 100%;
+  }
+  .input-text{
+    width: 70%;
+  }
+  .contenedor-botones{
+    display: flex;
+    gap: .5rem;
+  }
+  .caja{
+    width: 90%;
+  }
+  button{
+    padding: 0rem 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+
+}
